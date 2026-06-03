@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Praveen's Website | Bands</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="javascript/music.js"></script>
+        <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+        <link href="siteStyling.css" rel="stylesheet"/> 
+        <!--<script src="navigation.js"></script>-->
+    </head>
+    <body class="container">
+        <main class="wrapper" id="verticalflex">
+            <header>
+                <nav class="navigation">
+                    <div id="siteLogo"><a href="index.html" class="siteLogoLink">Praveen's Website</a></div>
+                    <div id="navlinks">
+                        <a href="index.html" class="navlink">Home</a>
+                        <a href="artwork.html" class="navlink">Artwork</a>
+                        <div class="navDropDown">
+                            <a class="navlink">Interests</a>
+                            <div class="navDropDownContent">
+                                <a href="novels.html">Novels</a>
+                                <a href="music.html" id="activenavlink">Music</a>
+                            </div>
+                        </div>                        
+                        <a href="media.html" class="navlink">Media</a>
+                        <a href="resume.html" class="navlink">Resume</a>
+                        <a href="contactMe.html" class="navlink">Contact Me</a>
+                        <a href="releaseHistory.html" class="navlink">Release History</a>
+                    </div>
+                    <div id="mobileLink">
+                        <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                        <div id="mobileMenu">
+                            <a href="index.html" class="navlink">Home</a>
+                            <a href="artwork.html" class="navlink">Artwork</a>
+                            <a class="navlink">Interests</a>
+                            <ul>
+                                <li><a href="novels.html">Novels</a></li>
+                                <li><a href="music.html">Music</a></li>
+                            </ul>
+                            <a href="media.html" class="navlink">Media</a>
+                            <a href="resume.html" class="navlink">Resume</a>
+                            <a href="contactMe.html" class="navlink">Contact Me</a>
+                            <a href="releaseHistory.html" class="navlink">Release History</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        <!-- Section for table element of travel wish list -->
+        <section class="infoSubContainer">
+            <h2>Music</h2>
+            <p>Here are some of my favorite music genres. </p>
+            <article id="genreList">
+                <ol v-for="item in genreList">
+                    <li :value="item.key"><data :value="item.value">{{item.genre}}</data></li>
+                </ol>
+            </article>
+        </section>
+        <!-- Section for dropdown to select travel influencers retrieved from back-end -->
+        <section class="infoSubContainer">
+            <fieldset id="influencer">
+                <legend>Favorite Bands</legend>
+                <label>Select Band: </label>
+                <select id="infNameDropdown" onchange="displayInfluencer()">
+                    <option>All Time Low</option>
+                    <option>One OK Rock</option>
+                    <option>Against the Current</option>
+                    <option>Set It Off</option>
+                    <option>The Material</option>
+                </select>
+                <h3 id="infName"></h3>
+                <article id="infDataRegion">
+                    <p id="infDesc"></p>
+                    <figure id="infPhotoRegion">
+                        <img src="" title="" alt="" id="bandPhoto"/>
+                        <figcaption id="infPhotoCaption"></figcaption>
+                    </figure>
+                </article>
+            </fieldset>
+        </section>
+    <br/>
+    <br/>
+        </main>
+    <!-- Persistent footer -->
+    <footer>
+        Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
+        <!--<address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> -->
+    </footer>
+    <script>
+        // Vue JS instance to dynamically populate the travel list element
+        var app = new Vue({
+            el: '#genreList',
+            data: {
+                genreList: [
+                    {
+                        key: 1,
+                        value: '001',
+                        genre: 'Pop-Punk'
+                    },
+                    {
+                        key: 2,
+                        value: '002',
+                        genre: 'Post-Hardcore'
+                    },
+                    {
+                        key: 3,
+                        value: '003',
+                        genre: 'Synth-Rock'
+                    },
+                    {
+                        key: 4,
+                        value: '004',
+                        genre: 'Power Pop'
+                    },
+                    {
+                        key: 5,
+                        value: '005',
+                        genre: 'Alternative Rock'
+                    }
+                ]
+            }
+        });
+    </script>
+</body>
+</html>
+<!-- 
+    Sources:
+    HTML Lang Attribute, https://www.w3schools.com/tags/att_lang.asp. 
+    “Semantic Elements in HTML5.” W3docs, https://www.w3docs.com/learn-html/semantic-elements-in-html5.html. 
+    "HTML <li> value Attribute." W3Schools, https://www.w3schools.com/tags/att_li_value.asp.
+    https://www.iheart.com/artist/all-time-low-60666/
+    https://soundcloud.com/one_ok_rock
+    https://www.youtube.com/user/setitoffband
+    https://concerty.com/artist/c40a79e9-3b9e-492e-9469-0e5b952ad3e1
+    https://www.facebook.com/photo/?fbid=10157486120005358&set=ecnf.100050310467065
+-->

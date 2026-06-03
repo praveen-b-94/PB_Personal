@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Praveen's Website | Activities</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="siteStyling.css" rel="stylesheet"/> 
+    </head>
+    <body class="container">
+        <main class="wrapper" id="verticalflex">
+        <!-- Persistent navigation bar -->
+        <header>
+            <nav class="navigation">
+                <div id="siteLogo"><a href="index.html" class="siteLogoLink">Praveen's Website</a></div>
+                <div id="navlinks">
+                    <a href="index.html" class="navlink">Home</a>
+                    <a class="navlink" id="activenavlink">Artwork</a>
+                    <div class="navDropDown">
+                        <a class="navlink">Interests</a>
+                        <div class="navDropDownContent">
+                            <a href="novels.html">Novels</a>
+                            <a href="traveling.html">Music</a>
+                        </div>
+                    </div>                    
+                    <a href="media.html" class="navlink">Media</a>
+                    <a href="resume.html" class="navlink">Resume</a>
+                    <a href="contactMe.html" class="navlink">Contact Me</a>
+                    <a href="releaseHistory.html" class="navlink">Release History</a>
+                </div>
+                <div id="mobileLink">
+                    <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                    <div id="mobileMenu">
+                        <a href="index.html" class="navlink" >Home</a>
+                        <a href="artwork.html" class="navlink" id="activenavlink">Artwork</a>
+                        <a class="navlink">Interests</a>
+                        <ul>
+                            <li><a href="novels.html">Novels</a></li>
+                            <li><a href="traveling.html">Music</a></li>
+                        </ul>
+                        <a href="media.html" class="navlink">Media</a>
+                        <a href="resume.html" class="navlink">Resume</a>
+                        <a href="contactMe.html" class="navlink">Contact Me</a>
+                        <a href="releaseHistory.html" class="navlink">Release History</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="infoSubContainer">
+        <h2>Artwork Gallery</h2>
+        <p>Here is a showcase of some artwork of mine that I would like to highlight. I chose these three works because they demonstrate a combination of physical (pencil and paper sketching) as well as digital enhancements and rending in software such as Adobe Photoshop.</p>
+        <p>Select an image to highlight pertaining detailed description.</p>
+        <!-- Artwork showcase section -->
+        <section id="artgallery">
+            <figure class="artgalleryphoto" onclick="highlightDesc(this)">
+                <img src="media/ifonlyicouldfly_nospiral.jpg" alt="If Only I could Fly. Pencil and digital." height="450" width="340"/>
+                <figcaption>“If Only I Could Fly”</figcaption>
+            </figure>
+            <figure class="artgalleryphoto" onclick="highlightDesc(this)">
+                <img src="media/PB_tee_shirt_mountain_design_sunset.png" alt="Above and Beyond. Pencil and digital." height="450" width="378"/>
+                <figcaption>“Above and Beyond”</figcaption>
+            </figure>
+            <!-- Octo logo (Legacy) referenced from: “Home - Jump the Technology Curve.” -->
+            <figure class="artgalleryphoto" onclick="highlightDesc(this)">
+                <img src="media/autumn_street.jpg" alt="Autumn Street. Pencil and digital." height="450" width="450"/>
+                <figcaption>“Autumn Street”</figcaption>
+            </figure>
+            <figure class="artgalleryphoto" onclick="highlightDesc(this)">
+                <img src="media/guitar_moody.jpg" alt="OK / Guitar. Pencil and digital." height="450" width="450"/>
+                <figcaption>“OK With You / Me ~ Guitar”</figcaption>
+            </figure>
+            <figure class="artgalleryphoto" onclick="highlightDesc(this)">
+                <img src="media/heart_gelada.jpg" alt="Gelada Heart. Pencil and digital." height="450" width="450"/>
+                <figcaption>“Gelada ~ Heart on Sleeve”</figcaption>
+            </figure>
+            <figure class="artgalleryphoto" onclick="highlightDesc(this)">
+                <img src="media/bike_neighborhood.jpg" alt="Inspirational Bicycle. Pencil and digital." height="450" width="450"/>
+                <figcaption>“Inspirational Bicycle”</figcaption>
+            </figure>
+        </section>
+        <!-- Definition list of descriptions for above artwork -->
+        <section id="artDescs">
+            <h4>Descriptions</h4>
+            <dl>
+                <div id="descItem01">
+                <dt>“If Only I Could Fly”</dt>
+                <dd>This image depicts a silhouette of an individual attempting to catapult from a tree tied to a stump, the scene and its reflection together forming the shape of an aircraft.</dd>
+                </div>
+                <div id="descItem02">
+                <dt>“Above and Beyond”</dt>
+                <dd>This image is a submission of mine for a T-Shirt design contest by my employer, Octo Consulting Group. It includes the company logo, with a person standing on hand-drawn mountains and octagon-shaped clouds.</dd>
+                </div>
+                <div id="descItem03">
+                <dt>“Autumn Street”</dt>
+                <dd>This image is an illustration of a suburban street during the season of autumn, with leaves on the ground and a strong, dusty shade of twilight over the landscape produced by a setting sun.</dd>
+                </div>
+                <div id="descItem04">
+                <dt>“OK With You / Me ~ Guitar”</dt>
+                <dd>This work of art depicts a person playing the guitar and contemplating experiences and circumstances presently in his life. The quote represents his thoughts in the moment.</dd>
+                </div>
+                <div id="descItem05">
+                <dt>“Gelada ~ Heart on Sleeve”</dt>
+                <dd>This work depicts the Gelada, a species of monkey famous for the red color on its chest (perceived to be symbolic of an exposed heart). That was my understanding as I chose this animal to represent "wearing your heart on your sleeve."</dd>
+                </div>
+                <div id="descItem06">
+                <dt>“Inspirational Bicycle”</dt>
+                <dd>This is an inspirational work that includes an illustration of a bicycle in a suburban neighborhood with a quote inspiring change.</dd>
+                </div>
+            </dl>
+            <br/><br/>
+        </section>
+    </section>
+    </main>
+    <!-- Persistent footer -->
+    <footer>
+        Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
+        <!--<address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> -->
+    </footer>
+    <script src="javascript/dynamicGallery.js"></script>
+</body>
+</html>
+<!--
+    Sources:
+    “Home - Jump the Technology Curve.” Innovative Solutions for the Federal Government's Most Complex IT ​Challenges​, 2 May 2022, https://www.octo.us/. 
+    HTML Lang Attribute, https://www.w3schools.com/tags/att_lang.asp. 
+    “Semantic Elements in HTML5.” W3docs, https://www.w3docs.com/learn-html/semantic-elements-in-html5.html. 
+-->

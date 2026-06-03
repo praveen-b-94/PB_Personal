@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Praveen's Website | Novels</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+        <link href="siteStyling.css" rel="stylesheet"/> 
+        <script src="javascript/navigation.js"></script>
+    </head>
+    <body class="container">
+        <main class="wrapper" id="verticalflex">
+            <header>
+                <nav class="navigation">
+                    <div id="siteLogo"><a href="index.html" class="siteLogoLink">Praveen's Website</a></div>
+                    <div id="navlinks">
+                        <a href="index.html" class="navlink">Home</a>
+                        <a href="artwork.html" class="navlink">Artwork</a>
+                        <div class="navDropDown">
+                            <a class="navlink">Interests</a>
+                            <div class="navDropDownContent">
+                                <a href="novels.html" id="activenavlink">Novels</a>
+                                <a href="music.html">Music</a>
+                            </div>
+                        </div>                        
+                        <a href="media.html" class="navlink">Media</a>
+                        <a href="resume.html" class="navlink">Resume</a>
+                        <a href="contactMe.html" class="navlink">Contact Me</a>
+                        <a href="releaseHistory.html" class="navlink">Release History</a>
+                    </div>
+                    <div id="mobileLink">
+                        <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                        <div id="mobileMenu">
+                            <a href="index.html" class="navlink">Home</a>
+                            <a href="artwork.html" class="navlink">Artwork</a>
+                            <a class="navlink">Interests</a>
+                            <ul>
+                                <li><a href="novels.html">Novels</a></li>
+                                <li><a href="music.html">Music</a></li>
+                            </ul>
+                            <a href="media.html" class="navlink">Media</a>
+                            <a href="resume.html" class="navlink">Resume</a>
+                            <a href="contactMe.html" class="navlink">Contact Me</a>
+                            <a href="releaseHistory.html" class="navlink">Release History</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        <!-- Section for table element of graphic novels -->
+        <section class="infoSubContainer">
+            <h2>Favorite Graphic Novels</h2>
+            <p>Below are my favorite graphic novels that I have read, published by the company Image comics.</p>
+            <table id="factTable">
+                <thead>
+                    <tr>
+                        <th class="factTh">Title</th>
+                        <th class="factTh">Authors</th>
+                        <th class="factTh">Month and Year started</th>
+                        <th class="factTh">Rating</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td class="factTd">Radiant Black</td>
+                    <td class="factTd">Higgins, Costa, Carey</td>
+                    <td class="factTd">October 2021</td>
+                    <td class="factTd">5/5</td>
+                </tr>
+                <tr>
+                    <td class="factTd">The Old Guard</td>
+                    <td class="factTd">Rucka, Fernandez, Miwa, Wynne</td>
+                    <td class="factTd">December 2021</td>
+                    <td class="factTd">4.6/5</td>
+                </tr>
+                <tr>
+                    <td class="factTd">God Country</td>
+                    <td class="factTd">Cates, Shaw, Wordie, Hill</td>
+                    <td class="factTd">February 2022</td>
+                    <td class="factTd">4.6/5</td>
+                </tr>
+                <tr>
+                    <td class="factTd">Reborn</td>
+                    <td class="factTd">Millar, Capullo</td>
+                    <td class="factTd">April 2022</td>
+                    <td class="factTd">4.9/5</td>
+                </tr>
+            </table>
+            <article id="vue-novelGallery">
+                <aside><h4>Cover Gallery</h4></aside>
+                <gallery></gallery>
+            </article>
+        </section>
+    <br/>
+    <br/>
+        </main>
+    <!-- Persistent footer -->
+    <footer>
+        Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
+        <!--<address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> -->
+    </footer>
+    <script src="javascript/novelGallery.js"></script>
+</body>
+</html>
+<!-- 
+    Sources:
+    HTML Lang Attribute, https://www.w3schools.com/tags/att_lang.asp. 
+    “Semantic Elements in HTML5.” W3docs, https://www.w3docs.com/learn-html/semantic-elements-in-html5.html. 
+-->

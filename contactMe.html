@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Praveen's Website | Contact Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="siteStyling.css" rel="stylesheet"/> 
+        <script src="javascript/contactMeValidation.js"></script>
+        <!--<script src="navigation.js"></script>-->
+    </head>
+    <body class="container">
+        <main class="wrapper">
+            <!-- Persistent navigation bar -->
+            <header>
+                <nav class="navigation">
+                    <div id="siteLogo"><a href="index.html" class="siteLogoLink">Praveen's Website</a></div>
+                    <div id="navlinks">
+                        <a href="index.html" class="navlink">Home</a>
+                        <a href="artwork.html" class="navlink">Artwork</a>
+                        <div class="navDropDown">
+                            <a class="navlink">Interests</a>
+                            <div class="navDropDownContent">
+                                <a href="novels.html">Novels</a>
+                                <a href="music.html">Music</a>
+                            </div>
+                        </div>                        
+                        <a href="media.html" class="navlink">Media</a>
+                        <a href="resume.html" class="navlink">Resume</a>
+                        <a class="navlink" id="activenavlink">Contact Me</a>
+                        <a href="releaseHistory.html" class="navlink">Release History</a>
+                    </div>
+                    <div id="mobileLink">
+                        <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                        <div id="mobileMenu">
+                            <a href="index.html" class="navlink">Home</a>
+                            <a href="artwork.html" class="navlink">Artwork</a>
+                            <a class="navlink">Interests</a>
+                            <ul>
+                                <li><a href="novels.html">Novels</a></li>
+                                <li><a href="music.html">Music</a></li>
+                            </ul>
+                            <a href="media.html" class="navlink">Media</a>
+                            <a href="resume.html" class="navlink">Resume</a>
+                            <a href="contactMe.html" class="navlink">Contact Me</a>
+                            <a href="releaseHistory.html" class="navlink">Release History</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- BU email, personal email, phone, alternative phone, state -->
+            <article class="infoSubContainer" id="contactMeForm">
+                <h2>Contact Me</h2>
+                <img src="media/envelope-silhouette-2.jpg" height=60 width=100 alt="Envelope icon"/>
+                <!-- full form contents: first name, last name, email address, confirm email address, city, state, zip, industry -->
+                <aside>Questions, comments or concerns? Please fill out the form below: </aside><br/>
+                <form onsubmit="return validateEntries()">
+                <article class="formContainer">
+                    <label for="firstName">First name: *</label><input type="text" name="firstName" id="firstName"/>
+                    <aside id="fnError" class="contactMeErrors">Only letters and numbers allowed for first name.</aside>
+                    <label for="lastName">Last name: *</label><input type="text" name="lastName" id="lastName"/>
+                    <aside id="lnError" class="contactMeErrors">Only letters and numbers allowed for last name.</aside>
+                    <label for="emailAddress">Email Address: *</label><input type="text" name="emailAddress" id="emailAddress" placeholder="emailaddress@example.com"/>
+                    <aside id="emailError" class="contactMeErrors">Email address format is invalid.</aside>
+                    <label for="confEmailAddress">Confirm Email Address: *</label><input type="text" name="confEmailAddress" id="confEmailAddress" placeholder="emailaddress@example.com"/>
+                    <aside id="confEmailError" class="contactMeErrors">Email address format is invalid.</aside>
+                    <label for="phoneNum">Phone: *</label><input type="text" name="phoneNum" id="phoneNum" placeholder="___-___-____"/>
+                    <aside id="phoneNumError" class="contactMeErrors">Phone number format is invalid.</aside>
+                    <label for="city">City: *</label><input type="text" name="city" id="city"/>
+                    <label for="stTySelect">State / Territory: *</label>
+                    <select name="stateTerritory" id="stTySelect">
+                        <option value="selectStTy" style="font-style: italic;">Select State/Territory</option>
+                        <option value="AL">AL - Alabama</option>
+                        <option value="AK">AK - Alaska</option>
+                        <option value="AZ">AZ - Arizona</option>
+                        <option value="AR">AR - Arkansas</option>
+                        <option value="CA">CA - California</option>
+                        <option value="CO">CO - Colorado</option>
+                        <option value="CT">CT - Connecticut</option>
+                        <option value="DE">DE - Delaware</option>
+                        <option value="FL">FL - Florida</option>
+                        <option value="GA">GA - Georgia</option>
+                        <option value="HI">HI - Hawaii</option>
+                        <option value="ID">ID - Idaho</option>
+                        <option value="IL">IL - Illinois</option>
+                        <option value="IN">IN - Indiana</option>
+                        <option value="IA">IA - Iowa</option>
+                        <option value="KS">KS - Kansas</option>
+                        <option value="KY">KY - Kentucky</option>
+                        <option value="LA">LA - Louisiana</option>
+                        <option value="ME">ME - Maine</option>
+                        <option value="MD">MD - Maryland</option>
+                        <option value="MA">MA - Massachusetts</option>
+                        <option value="MI">MI - Michigan</option>
+                        <option value="MN">MN - Minnesota</option>
+                        <option value="MS">MS - Mississippi</option>
+                        <option value="MO">MO - Missouri</option>
+                        <option value="MT">MT - Montana</option>
+                        <option value="NE">NE - Nebraska</option>
+                        <option value="NV">NV - Nevada</option>
+                        <option value="NH">NH - New Hampshire</option>
+                        <option value="NJ">NJ - New Jersey</option>
+                        <option value="NM">NM - New Mexico</option>
+                        <option value="NY">NY - New York</option>
+                        <option value="NC">NC - North Carolina</option>
+                        <option value="ND">ND - North Dakota</option>
+                        <option value="OH">OH - Ohio</option>
+                        <option value="OK">OK - Oklahoma</option>
+                        <option value="OR">OR - Oregon</option>
+                        <option value="PA">PA - Pennsylvania</option>
+                        <option value="RI">RI - Rhode Island</option>
+                        <option value="SC">SC - South Carolina</option>
+                        <option value="SD">SD - South Dakota</option>
+                        <option value="TN">TN - Tennessee</option>
+                        <option value="TX">TX - Texas</option>
+                        <option value="UT">UT - Utah</option>
+                        <option value="VT">VT - Vermont</option>
+                        <option value="VA">VA - Virginia</option>
+                        <option value="WA">WA - Washington</option>
+                        <option value="WV">WV - West Virginia</option>
+                        <option value="WI">WI - Wisconsin</option>
+                        <option value="WY">WY - Wyoming</option>
+                        <option value="DC">DC - District of Columbia</option>
+                        <option value="AS">AS - American Samoa</option>
+                        <option value="GU">GU - Guam</option>
+                        <option value="MP">MP - Northern Mariana Islands</option>
+                        <option value="PR">PR - Puerto Rico</option>
+                        <option value="VI">VI - U.S. Virgin Islands</option>
+                    </select>
+                    <label for="zip">Zip: *</label><input type="text" name="zip" id="zip" placeholder="_____"/>
+                    <aside id="zipError" class="contactMeErrors">Zip code format is invalid.</aside>
+                    <label for="industrySelect">Industry: </label><select name="industry" id="industrySelect">
+                        <option value="selectIndustry" style="font-style: italic;">Select Industry</option>
+                        <option value="InformationTechnology">Information Technology</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Education">Education</option>
+                        <option value="AccountingFinance">Accounting & Finance</option>
+                        <option value="SocialWork">Social Work</option>
+                        <option value="LifeSciences">Life Sciences</option>
+                        <option value="HumanResources">Human Resources</option>
+                    </select>
+                    <label for="msgTypeSelect">Message Type: </label><select name="messageType" id="msgTypeSelect">
+                        <option value="selectType" style="font-style: italic;">Select Type</option>
+                        <option value="question">Question</option>
+                        <option value="comment">Comment</option>
+                        <option value="concern">Concern</option>
+                    </select>
+                    <label for="msgcontent">Message: *</label><textarea name="messageContent" id="msgcontent"></textarea>
+                    <label for="contactDoc">Attachment: </label><input type="file" id="contactDoc">
+                    <br/>
+                    <input type="submit" id="submitBtn" name="submitBtn" value="Submit"/>
+                </article>
+                </form>
+            </article>
+        </main><br/><br/><br/>
+    <footer>
+        Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
+        <!--<address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> -->
+    </footer>
+</body>
+</html>
+<!-- 
+    Sources:
+    HTML Lang Attribute, https://www.w3schools.com/tags/att_lang.asp. 
+    “Semantic Elements in HTML5.” W3docs, https://www.w3docs.com/learn-html/semantic-elements-in-html5.html. 
+    "<input type="file">." MDN, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file.
+
+    Source (content):
+    "List of states and territories of the United States." Wikipedia, https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States.
+    Image source:
+    Siedlecki, Piotr. "Drawing Line Scribble." Needpix, https://www.needpix.com/photo/download/1320324/drawing-line-scribble-outline-email-business-envelope-sign-symbol. 
+-->

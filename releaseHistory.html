@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Praveen's Website | Release History</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="siteStyling.css" rel="stylesheet"/> 
+        <script src="javascript/navigation.js"></script>
+    </head>
+    <body class="container">
+        <main class="wrapper" id="verticalflex">
+            <!-- Persistent navigation bar -->
+            <nav class="navigation">
+                <div id="siteLogo"><a href="index.html" class="siteLogoLink">Praveen's Website</a></div>
+                <div id="navlinks">
+                    <a href="index.html" class="navlink">Home</a>
+                    <a href="artwork.html" class="navlink">Artwork</a>
+                    <div class="navDropDown">
+                        <a class="navlink">Interests</a>
+                        <div class="navDropDownContent">
+                            <a href="novels.html">Novels</a>
+                            <a href="music.html">Music</a>
+                        </div>
+                    </div>                    
+                    <a href="media.html" class="navlink">Media</a>
+                    <a href="resume.html" class="navlink">Resume</a>
+                    <a href="contactMe.html" class="navlink">Contact Me</a>
+                    <a class="navlink" id="activenavlink">Release History</a>
+                </div>
+                <div id="mobileLink">
+                    <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                    <div id="mobileMenu">
+                        <a href="index.html" class="navlink">Home</a>
+                        <a href="artwork.html" class="navlink">Artwork</a>
+                        <a class="navlink">Interests</a>
+                        <ul>
+                            <li><a href="novels.html">Novels</a></li>
+                            <li><a href="music.html">Music</a></li>
+                        </ul>
+                        <a href="media.html" class="navlink">Media</a>
+                        <a href="resume.html" class="navlink">Resume</a>
+                        <a href="contactMe.html" class="navlink">Contact Me</a>
+                        <a href="releaseHistory.html" class="navlink">Release History</a>
+                    </div>
+                </div>
+            </nav>
+            <section class="infoSubContainer" id="releaseHist">
+            <h2>Release History</h2>
+            <img src="media/clock.png" height=100 width=100 alt="Clock Icon"/><br/><br/>
+            <a href="https://www.flaticon.com/free-icons/clock" title="clock icons">Clock icons created by Freepik - Flaticon</a><br/><br/>
+            <!-- Table of records for each release (assignment submission)-->
+                <table id="factTable">
+                    <thead>
+                        <tr>
+                            <th class="factTh">Version</th>
+                            <th class="factTh">Release Date</th>
+                            <th class="factTh">Release Notes</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td class="factTd"><data value="5">5.0</data></td>
+                        <td class="factTd"><data value="02212025"><time datetime="2025-02-21 06:00">2/21/2025</time></data></td>
+                        <td class="factTd"><data value="303">Updated introductory page and resume.</data></td>
+                    </tr>
+                    <tr>
+                        <td class="factTd"><data value="4">4.0</data></td>
+                        <td class="factTd"><data value="05102023"><time datetime="2023-05-10 06:00">5/10/2023</time></data></td>
+                        <td class="factTd"><data value="303">Updated musician band data and resume.</data></td>
+                    </tr>
+                    <tr>
+                        <td class="factTd"><data value="3">3.0</data></td>
+                        <td class="factTd"><data value="06212022"><time datetime="2022-06-21 06:00">6/21/2022</time></data></td>
+                        <td class="factTd"><data value="303">Included dynamic JavaScript (Vue, DOM) functionality for pages such as Artwork and Index. Additional pages for Novels, Traveling, Resume. Contact Me includes a webform. Traveler Data fetched from JSON. Other changes included.</data></td>
+                    </tr>
+                    <tr>
+                        <td class="factTd"><data value="2">2.0</data></td>
+                        <td class="factTd"><data value="05242022"><time datetime="2022-05-24 06:00">5/24/2022</time></data></td>
+                        <td class="factTd"><data value="203">Included CSS styling, and additional pages for Interests and Contact information.</data></td>
+                    </tr>
+                    <tr>
+                        <td class="factTd"><data value="1">1.0</data></td>
+                        <td class="factTd"><data value="05172022"><time datetime="2022-05-17 06:00">5/17/2022</time></data></td>
+                        <td class="factTd"><data value="103">Included pages and content for index, activities, media and releaseHistory.</data></td>
+                    </tr>
+
+                </table>
+        </section>
+        </main>
+    <!-- Persistent footer -->
+    <footer class="footer">
+        Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
+        <!--<address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> -->
+    </footer>
+</body>
+</html>
+<!-- 
+    Sources:
+    HTML Lang Attribute, https://www.w3schools.com/tags/att_lang.asp. 
+    “Semantic Elements in HTML5.” W3docs, https://www.w3docs.com/learn-html/semantic-elements-in-html5.html. 
+
+    Image source:
+    "Clock free icon." Flaticon, https://www.flaticon.com/free-icon/clock_3721924#. 
+-->

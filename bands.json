@@ -1,0 +1,34 @@
+{
+    "bands": [
+    {
+          "name": "All Time Low",
+          "description": "All Time Low is a pop-rock band formed in the Baltimore area. The lead guitarist and singer is Alex Gaskarth, the lead guitarist is Jack Barakat, the bassist is Zack Merrick, and the drummer is Rian Dawson. I really admire their sound and evolution. They have released many albums, my favorite of which is \"Don't Panic\" (2012).",
+          "imgsrc": "/media/bands/all_time_low.jpg",
+          "websrc": "https://www.iheart.com/artist/all-time-low-60666/"
+    },
+    {
+        "name": "One OK Rock",
+        "description": "One OK Rock is a punk rock band founded in Tokyo, Japan. The band has four members: Takahiro Moriuchi (lead singer), Toru Yamashita (guitarist), Ryota Kohama (bassist), and Tomoya Kanki (drummer). The band beforms in English and Japanese. My favorite albums of theirs are Luxury Disease (2022), Ambitions (2017), 35xxxv (2015) and Jinsei Kakete Boku Wa (2013).",
+        "imgsrc": "/media/bands/one_ok_rock.jpg", 
+        "websrc": "https://soundcloud.com/one_ok_rock"
+    },
+    {
+        "name": "Against the Current",
+        "description": "Against the Current is an alternative rock band originating in Poughkeepsie, New York. The band's members are lead singer Chrissy Costanza, drummer Will Ferri, and guitarist Dan Gow. I really enjoy their sound, especially with its synth influences. My favorite EP of the band is Fever (2021), while my favorite studio album is In Our Bones (2016).",
+        "imgsrc": "/media/bands/against_the_current.jpeg",
+        "websrc": "https://concerty.com/artist/c40a79e9-3b9e-492e-9469-0e5b952ad3e1"
+    },
+    {
+        "name": "Set It Off",
+        "description": "Set It Off is a pop punk rock band founded in Tampa, Florida. Band members include: Cody Carson (lead singer), Zach DeWall (guitarist and bassist), and Maxx Danziger (drummer). They have released numerous albums which I appreciate and demonstrate flexibility and versatility in their sound.",
+        "imgsrc": "/media/bands/set_it_off.jpg",
+        "websrc": "https://www.youtube.com/user/setitoffband"
+    },
+    {
+        "name": "The Material",
+        "description": "The Material is a post-punk rock band formed in San Diego, California. The lead singer is Colleen D'Agostino, the lead guitarist is John Moreaux, the guitarist is Zack Smith, and the bassist is Jordan Meckley. I really appreciate their energetic and melodic sound. My favorite EP of theirs is \"Gray States\" (2018), and my favorite album of theirs is \"Everything I Want to Say\" (2013), which I find very inspiring.",
+        "imgsrc": "/media/bands/the_material.jpg",
+        "websrc": "https://www.facebook.com/photo/?fbid=10157486120005358&set=ecnf.100050310467065"
+    }
+    ]
+}

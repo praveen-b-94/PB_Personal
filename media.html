@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Praveen's Website | Media</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="siteStyling.css" rel="stylesheet"/> 
+        <script src="javascript/navigation.js"></script>
+    </head>
+    <body class="container">
+        <main class="wrapper" id="verticalflex">
+            <!-- Persistent navigation bar -->
+            <header>
+                <nav class="navigation">
+                    <div id="siteLogo"><a href="index.html" class="siteLogoLink">Praveen's Website</a></div>
+                    <div id="navlinks">
+                        <a href="index.html" class="navlink">Home</a>
+                        <a href="artwork.html" class="navlink">Artwork</a>
+                        <div class="navDropDown">
+                            <a class="navlink">Interests</a>
+                            <div class="navDropDownContent">
+                                <a href="novels.html">Novels</a>
+                                <a href="music.html">Music</a>
+                            </div>
+                        </div>                        
+                        <a class="navlink" id="activenavlink">Media</a>
+                        <a href="resume.html" class="navlink">Resume</a>
+                        <a href="contactMe.html" class="navlink">Contact Me</a>
+                        <a href="releaseHistory.html" class="navlink">Release History</a>
+                    </div>
+                    <div id="mobileLink">
+                        <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                        <div id="mobileMenu">
+                            <a href="index.html" class="navlink">Home</a>
+                            <a href="artwork.html" class="navlink">Artwork</a>
+                            <a class="navlink">Interests</a>
+                            <ul>
+                                <li><a href="novels.html">Novels</a></li>
+                                <li><a href="music.html">Music</a></li>
+                            </ul>
+                            <a href="media.html" class="navlink">Media</a>
+                            <a href="resume.html" class="navlink">Resume</a>
+                            <a href="contactMe.html" class="navlink">Contact Me</a>
+                            <a href="releaseHistory.html" class="navlink">Release History</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="infoSubContainer">
+            <h2>Media</h2>
+            <p>Displayed here is some content of creative professionals that inspires me.</p>
+            <!-- Section to display video element and descriptive content -->
+            <section>
+                <h3>Video</h3>
+                    <aside class="mediaItem">
+                        <p class="vidPlaceholder">Video courtesy of Dan Cristian Pădureț, depicting "windsurfing in the open sea" (Pădureț). I appreciate the symbolism of expanding one's horizons. The video has a Creative Commons license.</p>
+                        <video id="vidContent" src="media/pexels-free-creative-stuff-5491966.mp4" controls width="750" height="425"></video>
+                        <br/>
+                        <!-- (Pădureț, 2020) -->
+                        <details><summary>The above video, courtesy of Dan Cristian Pădureț, depicts "windsurfing in the open sea" (Pădureț). I appreciate the symbolism of expanding one's horizons. The video has a Creative Commons license.</summary></details>
+                    </aside>
+            </section>
+            <!-- Section to display photo element and descriptive content -->
+            <section>
+                <h3>Photo</h3>
+                <aside class="mediaItem">
+                    <p class="vidPlaceholder">Photograph, "Photo of Person's Hand Across Flying Hot Air Balloons During Golden Hour", courtesy of Oziel Gomez. I interpret this image as conveying that the "sky is the limit" and encouraging the viewer to have high aspirations. The image has a Creative Commons license.</p>
+                    <img src="media/photo-of-person-s-hand-across-flying-hot-air-balloons-during-2893685.jpg" alt="Pexels hot air balloons, Oziel Gomez" height="750" width="500"><br/>
+                    <details><summary>The above photograph is called, "Photo of Person's Hand Across Flying Hot Air Balloons During Golden Hour", courtesy of Oziel Gomez. I interpret this image as conveying that the "sky is the limit" and encouraging the viewer to have high aspirations. The image has a Creative Commons license.</summary></details>
+                    <!-- (Gómez, 2019) -->
+                </aside>
+            </section>
+        </section>
+        </main>
+    <br/><br/>
+    <!-- Persistent footer -->
+    <footer>
+        Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
+        <!--<address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> -->
+    </footer>
+</body>
+</html>
+<!-- 
+    Sources: 
+    Pexels. (2020). Windsurfing In The Open Sea. Retrieved May 15, 2022, from https://www.pexels.com/video/windsurfing-in-the-open-sea-5491966/. 
+    Gómez, O. (2019). Photo of Person's Hand Across Flying Hot Air Balloons During Golden Hour. Pexels. photograph. Retrieved May 15, 2022, from https://www.pexels.com/photo/photo-of-person-s-hand-across-flying-hot-air-balloons-during-golden-hour-2893685/. 
+    “: The Details Disclosure Element - Html: Hypertext Markup Language: MDN.” HTML: HyperText Markup Language | MDN, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details. 
+    HTML Lang Attribute, https://www.w3schools.com/tags/att_lang.asp. 
+    “Semantic Elements in HTML5.” W3docs, https://www.w3docs.com/learn-html/semantic-elements-in-html5.html. 
+-->

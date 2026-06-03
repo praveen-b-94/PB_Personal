@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Praveen's Website | Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+        <script src="javascript/navigation.js"></script>
+        <link href="siteStyling.css" rel="stylesheet"/> 
+    </head>
+    <body class="container">
+        <main class="wrapper">
+            <!-- Persistent navigation bar -->
+            <header>
+                <nav class="navigation">
+                    <div id="siteLogo"><a href="index.html" class="siteLogoLink">Praveen's Website</a></div>
+                    <div id="navlinks">
+                        <a class="navlink" id="activenavlink">Home</a>
+                        <a href="artwork.html" class="navlink">Artwork</a>
+                        <div class="navDropDown">
+                            <a class="navlink">Interests</a>
+                            <div class="navDropDownContent">
+                                <a href="novels.html">Novels</a>
+                                <a href="music.html">Music</a>
+                            </div>
+                        </div>
+                        <a href="media.html" class="navlink">Media</a>
+                        <a href="resume.html" class="navlink">Resume</a>
+                        <a href="contactMe.html" class="navlink">Contact Me</a>
+                        <a href="releaseHistory.html" class="navlink">Release History</a>
+                    </div>
+                    <div id="mobileLink">
+                        <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                        <div id="mobileMenu">
+                            <a class="navlink">Home</a>
+                            <a href="artwork.html" class="navlink">Artwork</a>
+                            <a class="navlink">Interests</a>
+                            <ul>
+                                <li><a href="novels.html">Novels</a></li>
+                                <li><a href="music.html">Music</a></li>
+                            </ul>
+                            <a href="media.html" class="navlink">Media</a>
+                            <a href="resume.html" class="navlink">Resume</a>
+                            <a href="contactMe.html" class="navlink">Contact Me</a>
+                            <a href="releaseHistory.html" class="navlink">Release History</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- Section to display the figure on the left-hand side -->
+            <div id="vue-introimage">
+                <carousel></carousel>
+            </div>
+            <!-- Section to display the text content on the right-hand side -->
+            <section id="biotext">
+                <article class="intro">
+                    <h1>Welcome.</h1>
+                    <div><p>Glad you're here.</p></div>
+                    <figure><img id="selfPhoto" src="media/self-photo.jpeg" alt="Self Photo"/></figure>
+                </article>
+            <!-- Articles for two main topics -->
+                <article>
+                    <h3>I am...</h3>
+                    <p>
+                        A dreamer turned doer—an innovator, a seeker of wisdom, and a navigator of life's endless possibilities. Like a falcon, I sharpen my mind each day, honing my skills and expanding my perspective. I am a Lego castle, continuously building upon my foundation, brick by brick, evolving into something stronger and more intricate. I am a navigator, charting a course toward success, wisdom, and inner peace. Every day is an opportunity to push my boundaries, refine my craft, and make each day more meaningful than the last.
+                    </p>
+                    <h3>My Hustle and Grind</h3>
+                    <p>
+                        By day, I bring ideas to life as a software developer at <a href="https://www.icf.com/" target="_blank">ICF</a>, where I specialize in Appian development. My work is more than just writing code—it's about delivering solutions, optimizing workflows, and building systems that drive efficiency and innovation. Just as I continuously refine myself, I refine digital experiences, transforming complex challenges into seamless, scalable applications. I thrive at the intersection of logic and creativity, where every problem is an opportunity to craft something new, faster, and more intuitive. Whether it's designing elegant interfaces or tackling intricate puzzles, I approach my work with the same mindset that fuels every aspect of my life—growth, curiosity, and a drive to make an impact.
+                    </p>
+                    <h3>When the Moon Shines Bright</h3>
+                    <p>
+                        I’m always in pursuit of creativity, knowledge, and new experiences. You’ll find me crafting digital art, learning languages, and lifting heavy at the gym to hard beats, fueled by motivation. I live in the vibrant DC area, where I explore its diverse food scene—whether it's sushi, baklava, bubble tea, burritos, or a plate of paneer tikka masala. Language is another passion of mine—I speak Spanish, Portuguese, Hindi, and Telugu, each opening new doors to culture and connection. When I’m not out with the crew or enjoying a chill night in, I’m tuning into Baltimore Ravens games, embracing the highs and lows of football season. Lately, I’ve been diving into music production, experimenting with a synth and software to create electronic beats. No matter what I’m doing, I bring the same mindset—going all in, pushing boundaries, and making every moment count.
+                    </p>
+                </article>
+            </section>
+        </main>
+    <br/><br/><br/>
+    <!-- Persistent footer -->
+    <footer>
+        Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
+        <!--<address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> -->
+    </footer>
+    <script src="javascript/indexCarousel.js"></script>
+</body>
+</html>
+<!-- 
+    Sources:
+    HTML Lang Attribute, https://www.w3schools.com/tags/att_lang.asp. 
+    “Semantic Elements in HTML5.” W3docs, https://www.w3docs.com/learn-html/semantic-elements-in-html5.html. 
+-->

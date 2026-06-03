@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Praveen's Website | Resume</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="siteStyling.css" rel="stylesheet"/> 
+        <script src="javascript/navigation.js"></script>
+    </head>
+    <body class="container">
+        <main class="wrapper" id="verticalflex">
+            <!-- Persistent navigation bar -->
+            <nav class="navigation">
+                <div id="siteLogo"><a href="index.html" class="siteLogoLink">Praveen's Website</a></div>
+                <div id="navlinks">
+                    <a href="index.html" class="navlink">Home</a>
+                    <a href="artwork.html" class="navlink">Artwork</a>
+                    <div class="navDropDown">
+                        <a class="navlink">Interests</a>
+                        <div class="navDropDownContent">
+                            <a href="novels.html">Novels</a>
+                            <a href="music.html">Music</a>
+                        </div>
+                    </div>
+                    <a href="media.html" class="navlink">Media</a>
+                    <a href="resume.html" class="navlink" id="activenavlink">Resume</a>
+                    <a href="contactMe.html" class="navlink">Contact Me</a>
+                    <a href="releaseHistory.html" class="navlink">Release History</a>
+                </div>
+                <div id="mobileLink">
+                    <a class="navLink" onclick="displayMobileMenu()">Menu</a>
+                    <div id="mobileMenu">
+                        <a href="index.html" class="navlink">Home</a>
+                        <a href="artwork.html" class="navlink">Artwork</a>
+                        <a class="navlink">Interests</a>
+                        <ul>
+                            <li><a href="novels.html">Novels</a></li>
+                            <li><a href="music.html">Music</a></li>
+                        </ul>
+                        <a href="media.html" class="navlink">Media</a>
+                        <a href="resume.html" class="navlink">Resume</a>
+                        <a href="contactMe.html" class="navlink">Contact Me</a>
+                        <a href="releaseHistory.html" class="navlink">Release History</a>
+                    </div>
+                </div>
+            </nav>
+            <section class="infoSubContainer">
+            <h2>My Resume</h2>
+            <img src="media/kindpng_1780076.png" height=75 width=100 alt="Briefcase Icon"/><br/><br/>
+            <aside>
+                Here is the latest (February 2025) version of my resume in .PDF format.
+            </aside>
+            <br/>
+            <iframe src="embed/PraveenB_Resume_AppianDev_Feb2025.pdf" height=650 style="width: 100%">
+            </iframe>
+        </section>
+        </main>
+    <!-- Persistent footer -->
+    <footer class="footer">
+        Praveen Bachoti. METCS601. <a href="https://www.bu.edu/">Boston University.</a>
+        <!--<address><a href="mailto:praveenb@bu.edu">praveenb@bu.edu</a></address> -->
+    </footer>
+</body>
+</html>
+<!-- 
+    Sources:
+    "How to Embed PDF in HTML." W3Docs, https://www.w3docs.com/snippets/html/how-to-embed-pdf-in-html.html.
+    HTML Lang Attribute, https://www.w3schools.com/tags/att_lang.asp. 
+    “Semantic Elements in HTML5.” W3docs, https://www.w3docs.com/learn-html/semantic-elements-in-html5.html. 
+
+    Image source:
+    "Ecomedy". "Artboard 1 4x - Briefcase, HD Png Download". KindPNG, https://www.kindpng.com/imgv/iiowibJ_artboard-1-4x-briefcase-hd-png-download/.
+-->

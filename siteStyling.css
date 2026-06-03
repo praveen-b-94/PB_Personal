@@ -1,0 +1,507 @@
+/* Selectors for outer-most elements */
+@font-face {
+    font-family: RecursiveSans;
+    src: url("");
+}
+
+.container {
+    position: relative;
+    margin: 0px;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    padding-top: 50px;
+    /*font-family: RecursiveSans;*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    background-color: #1a1a1a;
+    color: azure;
+    display: flex;
+}
+
+/* Use of flexbox */
+#verticalflex {
+    background-color: #1a1a1a;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    background-color: #007cdb;
+    padding: 0px;
+    font-size: larger;
+    text-decoration: none;
+    color: ghostwhite;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+#mobileLink {
+    display: none;
+}
+
+#navlinks {
+    flex: 1 -10%;
+    text-align: justify;
+    display: inline-flex;
+    margin-right: 0%;
+    padding: 15px;
+}
+
+.navlink {
+    text-decoration: none;
+    margin-inline-end: 20px;
+}
+#activenavlink {
+    /*background: #014477;*/
+    font-weight: bold;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.navDropDown {
+    position: relative;
+    display: inline-block;
+}
+.navDropDown:hover .navDropDownContent {
+    display: block;
+}
+.navDropDownContent {
+    display: none;
+    position: absolute;
+    background-color:#007cdb;
+    box-shadow: 0px 9px 15px 0px #1a1a1ac5;
+    min-width: 120px;
+    z-index: 2;
+}
+.navDropDownContent a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: azure;
+}
+
+a:hover {
+    color: #014477;
+}
+
+#siteLogo {
+    flex: 1;
+    text-align: inherit;
+    display: inline-flex;
+    margin-left: 0%;
+    font-size: larger;
+    text-decoration: none;
+    color: ghostwhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+}
+
+.siteLogoLink {
+    text-decoration: none;
+}
+
+/* Selector for smaller content sections */
+.infoSubContainer {
+    flex-basis: 100%;
+    padding: 15px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#biotext {
+    width: 600px;
+    padding: 20px;
+    font-size: medium;
+    font-family:inherit;
+    font-weight: lighter;
+    background-color: inherit;
+}
+
+.intro {
+    font-weight: bold;
+    text-align: center;
+}
+
+#introimage {
+    margin-left: 0px;
+    caption-side: bottom;
+    background-color: inherit;
+    word-wrap: normal;
+    flex: 0 40%;
+}
+
+#selfPhoto {
+    border-radius: 50%;
+    border: 2px ghostwhite;
+    height: 100px;
+    width: 100px;
+    /*visibility: hidden;*/
+}
+
+#artgallery {
+    background-color: ghostwhite;
+    overflow-x: scroll;
+    width: inherit;
+    white-space: nowrap;
+}
+
+.artgalleryphoto {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    margin: 0px;
+    border: 2px solid ghostwhite;
+    background-color: ghostwhite;
+    color: #1a1a1a;
+}
+
+#artDescs dd{
+    padding: 10px;
+}
+
+#descItem01 {
+    padding: 5px;
+    background-color:#1a1a1a;
+    color:#f8f8ff;
+    border-radius: 8px;
+}
+#descItem02 {
+    padding: 5px;
+    background-color:#1a1a1a;
+    color:#f8f8ff;
+    border-radius: 8px;
+}
+#descItem03 {
+    padding: 5px;
+    background-color:#1a1a1a;
+    color:#f8f8ff;
+    border-radius: 8px;
+}
+#descItem04 {
+    padding: 5px;
+    background-color:#1a1a1a;
+    color:#f8f8ff;
+    border-radius: 8px;
+}
+#descItem05 {
+    padding: 5px;
+    background-color:#1a1a1a;
+    color:#f8f8ff;
+    border-radius: 8px;
+}
+#descItem06 {
+    padding: 5px;
+    background-color:#1a1a1a;
+    color:#f8f8ff;
+    border-radius: 8px;
+}
+
+#vue-novelGallery {
+    width: auto;
+    text-align: left;
+    padding: 20px;
+}
+
+.mediaItem {
+    display: inline-block;
+    width: 60%;
+    padding: 10px;
+    margin: 0px;
+}
+
+#vidContent {
+    width: 100%;
+}
+
+.formContainer{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#contactMeForm {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    width: fit-content;
+    font-size: large;
+}
+
+#submitBtn {
+    width: 40%;
+    justify-self: center;
+    grid-column-start: span 2;
+    background-color:aliceblue;
+    border-color: darkgreen;
+    color: darkgreen;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+textarea {
+    height: 100px;
+}
+
+#releaseHist {
+    text-align: center;
+}
+
+/* Placeholder for video in print view */
+#vidPlaceholder {
+    visibility: collapse;
+}
+
+.caption {
+    font-size: smaller;
+    float: left;
+    display: block;
+    position: static;
+    bottom: 0;
+}
+
+#contactInfoTable {
+    border: 0px;
+}
+
+.contactInfoTd {
+    padding: 10px;
+    font-size: larger;
+}
+
+/* Influencer content styling */
+#influencer {
+    padding: 20px;
+}
+#infDataRegion {
+    display: flex;
+    flex-direction: row;
+}
+#bandPhoto {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+#infDesc {
+    flex: 0 75%;
+    padding: 10px;
+}
+#infPhotoRegion{
+    flex: 1 25%;
+    text-align: center;
+}
+
+/* Selectors for individual elements that constitute tables */
+#factTable {
+    border-collapse: collapse;
+}
+
+.factTh {
+    border: 1px solid #f9f8ff;
+    background-color: #f8f8ff;
+    color: #1a1a1a;
+    padding: 5px;
+}
+
+.factTd {
+    border: 1px solid ghostwhite;
+    padding: 5px;
+}
+
+.contactMeErrors {
+    grid-column: 2;
+    font-size: small;
+    color:crimson;
+}
+
+#fnError {
+    display: none;
+}
+
+#lnError {
+    display: none;
+}
+
+#emailError {
+    display: none;
+}
+
+#confEmailError {
+    display: none;
+}
+
+#phoneNumError{
+    display: none;
+}
+
+#cityError{
+    display: none;
+}
+
+#zipError{
+    display: none;
+}
+
+footer {
+    clear: both;
+    text-align: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 8px;
+    background-color: #92b3d4;
+}
+
+/* Media Query for print view */
+@media print {
+    .navigation {
+        visibility: hidden;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+
+    img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+
+    #introimage {
+        visibility: collapse;
+    }
+
+    #artgallery {
+        width: max-content;
+        overflow: scroll;
+    }
+
+    .artgalleryphoto {
+        width: 25%;
+        visibility: visible;
+    }
+
+    .mediaItem {
+        visibility: collapse;
+    }
+
+    .vidPlaceholder {
+        visibility: visible;
+    }
+}
+
+/* Media Query for mobile view */
+@media only screen and (max-width: 768px) {
+
+    .container {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        width: 100%
+    }
+
+    .navigation {
+        display:inline-flex;
+        background-color: #007cdb;
+        padding: 0px;
+        font-size: larger;
+        width: 100%;
+    }
+    
+    #navlinks {
+        display: none;
+    }
+    #mobileLink {
+        display: inline-block;
+        position: relative;
+        visibility: visible;
+        justify-self: end;
+        padding: 20px;
+    }
+
+    #mobileMenu {
+        display: none;
+        position: fixed;
+        right: 0px;
+        background-color:#007cdb;
+        box-shadow: 0px 9px 15px 0px #1a1a1ac5;
+        min-width: 120px;
+        z-index: 2;
+    }
+    #mobileMenu a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    img {
+        height: 25%;
+        width: 100%;
+    }
+
+    #vue-introimage {
+        height: 300px;
+        width: fit-content;
+        object-fit: cover;
+    }
+
+    #infDataRegion {
+        display: flex;
+        flex-direction: column;
+    }
+    #infDesc {
+        flex: 0;
+        padding: 10px;
+    }
+    #infPhotoRegion{
+        flex: 1;
+        text-align: center;
+    }
+
+    #biotext {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .mediaItem {
+        object-fit: contain;
+        height: 25%;
+        width: 100%;
+    }
+
+}
+
+/*
+    Sources:
+    “Flexbox - Learn Web Development: MDN.” Learn Web Development | MDN, https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox. 
+    “Box-Shadow - CSS: Cascading Style Sheets: MDN.” CSS: Cascading Style Sheets | MDN, https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow. 
+    “How to Remove HTML Purple Link – an Easy Solution.” The JavaScript Diaries, 5 May 2020, https://www.jsdiaries.com/how-to-remove-html-purple-link-an-easy-solution/. 
+    Fraser, Dominic. “How to Keep Your Footer Where It Belongs ?” FreeCodeCamp.org, FreeCodeCamp.org, 16 May 2022, https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/. 
+    Schwarz, Daniel. “How to Use CSS Media Queries to Make Printable Web Pages.” Our Blog, Our Blog, 15 Dec. 2021, https://sympli.io/blog/a-quick-guide-to-css-for-printable-webpages/. 
+    “Responsive Web Design - Media Queries.” Responsive Web Design Media Queries, https://www.w3schools.com/css/css_rwd_mediaqueries.asp. 
+    "Alligator.io." "How To Scale and Crop Images with CSS object-fit." Digital Ocean, 3 Sept. 2020, https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
+*/

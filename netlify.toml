@@ -1,0 +1,9 @@
+[build]
+  base    = "site"
+  command = "mkdir -p public/media public/embed && cp -r ../media/. public/media/ && (cp -r ../embed/. public/embed/ 2>/dev/null || true) && npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
