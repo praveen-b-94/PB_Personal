@@ -6,14 +6,14 @@ const pieces = [
     title: 'If Only I Could Fly',
     medium: 'Pencil & Digital',
     description:
-      'A silhouette of an individual attempting to catapult from a tree tied to a stump, the scene and its reflection together forming the shape of an aircraft.',
+      'A silhouette of a person attempting to catapult from a tree tied to a stump, the scene and its reflection together forming the shape of an aircraft.',
   },
   {
     src: '/media/PB_tee_shirt_mountain_design_sunset.png',
     title: 'Above and Beyond',
     medium: 'Pencil & Digital',
     description:
-      'A T-shirt design submission for my employer, Octo Consulting Group — featuring the company logo with a person standing on hand-drawn mountains beneath octagon-shaped clouds.',
+      'A T-shirt design submission for my former employer, Octo Consulting Group — featuring the company logo with a person standing on hand-drawn mountains beneath octagon-shaped clouds.',
   },
   {
     src: '/media/autumn_street.jpg',
@@ -27,7 +27,7 @@ const pieces = [
     title: 'OK With You / Me ~ Guitar',
     medium: 'Pencil & Digital',
     description:
-      'A person playing guitar and contemplating the experiences and circumstances presently in his life. The quote represents his thoughts in the moment.',
+      'A young man playing guitar and contemplating the experiences and circumstances presently in his life. The quote represents his thoughts in the moment.',
   },
   {
     src: '/media/heart_gelada.jpg',

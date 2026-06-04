@@ -9,7 +9,7 @@ export default function Footer() {
           <Link to="/contact" className="hover:text-neutral-700 transition-colors">Contact</Link>
           <Link to="/resume" className="hover:text-neutral-700 transition-colors">Resume</Link>
           <a
-            href="https://www.linkedin.com/in/praveenbachoti"
+            href="https://www.linkedin.com/in/praveen-bachoti-92b897239/"
             target="_blank"
             rel="noreferrer"
             className="hover:text-neutral-700 transition-colors"
