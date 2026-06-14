@@ -17,22 +17,28 @@ function getMime(file) {
   )
 }
 
-// Dev plugin: serve /media and /embed directly from the repo root
+// Serve /media and /embed directly from the repo root, in both the dev
+// server and `vite preview` (used by the automated test suite).
+function repoAssetMiddleware(req, res, next) {
+  const url = req.url?.split('?')[0]
+  if (url?.startsWith('/media/') || url?.startsWith('/embed/')) {
+    const filePath = resolve(repoRoot, url.slice(1))
+    if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+      res.setHeader('Content-Type', getMime(filePath))
+      fs.createReadStream(filePath).pipe(res)
+      return
+    }
+  }
+  next()
+}
+
 const serveRepoAssets = {
   name: 'serve-repo-assets',
   configureServer(server) {
-    server.middlewares.use((req, res, next) => {
-      const url = req.url?.split('?')[0]
-      if (url?.startsWith('/media/') || url?.startsWith('/embed/')) {
-        const filePath = resolve(repoRoot, url.slice(1))
-        if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
-          res.setHeader('Content-Type', getMime(filePath))
-          fs.createReadStream(filePath).pipe(res)
-          return
-        }
-      }
-      next()
-    })
+    server.middlewares.use(repoAssetMiddleware)
+  },
+  configurePreviewServer(server) {
+    server.middlewares.use(repoAssetMiddleware)
   },
 }
 
