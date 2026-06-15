@@ -71,7 +71,7 @@ export default function Home() {
             <div className="relative w-52 h-52 md:w-64 md:h-64">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-orange-400 to-orange-300 blur-2xl opacity-25" />
               <img
-                src="/media/pb_the_creator.png"
+                src="/media/pb_the_creator_downscaled.png"
                 alt="Praveen Bachoti"
                 className="relative w-full h-full rounded-full object-cover border-2 border-orange-400/50 shadow-xl"
                 onError={(e) => {
