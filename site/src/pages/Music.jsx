@@ -118,16 +118,6 @@ export default function Music() {
           </div>
         </div>
       </section>
-
-      {/* Production note */}
-      <section className="mt-16 card p-6 border-orange-200 bg-orange-50">
-        <h2 className="text-neutral-900 font-semibold mb-2">My Own Production</h2>
-        <p className="text-neutral-500 text-sm leading-relaxed">
-          Beyond listening, I've been diving into music production — experimenting with a synthesizer and
-          DAW software to craft my own electronic beats. It's an evolving side project that keeps me
-          creatively grounded outside of software development.
-        </p>
-      </section>
-    </div>
+      </div>
   )
 }
