@@ -7,7 +7,7 @@ export default function Resume() {
           <p className="text-neutral-500 text-sm">Last updated July 2026</p>
         </div>
         <a
-          href="/embed/Praveen_Bachoti_Resume_QE.pdf"
+          href="/embed/Praveen_Bachoti_Resume_SWE_2026.pdf"
           download
           className="btn-primary self-start sm:self-auto"
         >
@@ -21,7 +21,7 @@ export default function Resume() {
       {/* PDF embed */}
       <div className="card overflow-hidden" style={{ height: '85vh' }}>
         <iframe
-          src="/embed/Praveen_Bachoti_Resume_QE.pdf"
+          src="/embed/Praveen_Bachoti_Resume_SWE_2026.pdf"
           className="w-full h-full"
           title="Praveen Bachoti Resume"
         />
@@ -30,7 +30,7 @@ export default function Resume() {
       <p className="text-neutral-400 text-xs text-center mt-4">
         If the PDF doesn't load,{' '}
         <a
-          href="/embed/Praveen_Bachoti_Resume_QE.pdf"
+          href="/embed/Praveen_Bachoti_Resume_SWE_2026.pdf"
           className="text-orange-500 hover:underline"
           target="_blank"
           rel="noreferrer"
