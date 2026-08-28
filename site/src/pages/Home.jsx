@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const highlights = [
-  { emoji: '💻', label: 'Technologist', detail: 'Software Quality and DevOps' },
+  { emoji: '💻', label: 'Technologist', detail: 'Software Application Development' },
   { emoji: '🎨', label: 'Digital Artist', detail: 'Pencil sketching + Photoshop' },
   { emoji: '🎵', label: 'Music Producer', detail: 'Synth & electronic beats' },
   { emoji: '🏋️', label: 'Gym Rat', detail: 'Heavy lifting to hard beats' },
