@@ -4,10 +4,10 @@ export default function Resume() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
         <div>
           <h1 className="section-heading mb-1">Resume</h1>
-          <p className="text-neutral-500 text-sm">Last updated August 2026</p>
+          <p className="text-neutral-500 text-sm">Last updated September 2026</p>
         </div>
         <a
-          href="/embed/Praveen_Bachoti_Resume_SWE_2026.pdf"
+          href="/embed/Praveen_Bachoti_Software_Engineer.pdf"
           download
           className="btn-primary self-start sm:self-auto"
         >
@@ -21,7 +21,7 @@ export default function Resume() {
       {/* PDF embed */}
       <div className="card overflow-hidden" style={{ height: '85vh' }}>
         <iframe
-          src="/embed/Praveen_Bachoti_Resume_SWE_2026.pdf"
+          src="/embed/Praveen_Bachoti_Software_Engineer.pdf"
           className="w-full h-full"
           title="Praveen Bachoti Resume"
         />
@@ -30,7 +30,7 @@ export default function Resume() {
       <p className="text-neutral-400 text-xs text-center mt-4">
         If the PDF doesn't load,{' '}
         <a
-          href="/embed/Praveen_Bachoti_Resume_SWE_2026.pdf"
+          href="/embed/Praveen_Bachoti_Software_Engineer.pdf"
           className="text-orange-500 hover:underline"
           target="_blank"
           rel="noreferrer"
